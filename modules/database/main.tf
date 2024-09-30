@@ -26,6 +26,9 @@ resource "postgresql_role" "pgcon_limited_user" {
   search_path = [postgresql_schema.pgcon.name]
 }
 
+// Now let's provision some tables! We will run a script to seed some data
+
+
 
 // read only from the pgcon schema for the readonly user
 resource "postgresql_grant" "readonly_database" {
